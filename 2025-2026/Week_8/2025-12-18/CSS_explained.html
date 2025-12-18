@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Css Explained
+    </title>
+    <style>
+        table, tr, th, td {
+            border:5px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        h1{color:red;font-family: "Comic Sans MS";
+        }
+        a:hover{color: crimson}
+        a:visited{color: lime}
+        a:active{color: gold}
+        details{color: aqua;+details{color: lightsalmon}}
+        summary{font-family: Chalkduster}
+        h2{color: mediumpurple; font-family: Didot}
+        table{background-color: cadetblue}
+        body{background-color:#304794 }
+        .links{font-family: fantasy; font-size: x-large}
+        #ID{font-size: larger; font-family: Papyrus}
+        .comicsans{font-family: "Comic Sans MS"; font-size: x-large}
+        .king{color: gold}
+    </style>
+</head>
+
+<body>
+<h1>Nav</h1>
+<a href="sdlc2.html">Link</a>
+
+<h2 a href="coolmath.com">CSS Vocab</h2>
+    <details>Display alters an element on a web page & determines the type of box used and its position, None hides the element, Inline shows an element as an inline element, block shows an element as a block element, Flex shows an element block level flex container, Grid shows an element as a block-level grid container
+        <summary>Css attribute:display values: box, inline, flex, grid, none</summary>
+    </details>
+
+<details>Changes font size
+    <summary>CSS attribute:font-size</summary>
+</details>
+
+
+<details>vh:viewport height, 1 vh equals 1% of the height of the viewport, vw:viewport width 1vw equals 1% of the width of the viewport, vmax: 1vmax equals 1% of the larger value between the viewport width or height, vmin: 1 vmin equals 1% of the smaller value between the viewport width or height
+    <summary>CSS size viewport relative units: vh, vw, vmax, vmin</summary>
+</details>
+
+<details>Absolute units do not change when the screen size changes, and are not recommended for websites, but can be used if the output medium is known such as for print layout
+    <summary>CSS absolute units</summary>
+</details>
+
+<details>Shows or hides an element without changing the space the element takes up.  This is different from display:none; which removes the height
+    <summary>CSS visibility</summary>
+</details>
+
+<details>The font family attribute allows the user to change their font to the users liking, like "calibri", or "comic sans"
+    <summary>CSS attribute: font-family</summary>
+</details>
+
+<details>With CSS you have full control over the padding.  There are properties for setting the padding for each side of an element, adds space in between the border & content
+    <summary>CSS padding</summary>
+</details>
+
+<details>The CSS margin is property used to create space around elements, outside of any defined borders
+    <summary>CSS margin</summary>
+</details>
+
+
+<h3>CSS selectors</h3>
+
+
+
+
+<table>
+    <th class="links">Link</th><th class="links">Visited</th><th class="links">Hover</th><th class="links">Active</th>
+    <tr>
+        <td>Styles unvisited links</td>
+        <td>styles visited links</td>
+        <td>styles a link on a mouse over it</td>
+        <td>styles a link as it is clicked</td>
+    </tr>
+    <th class="king">Tag</th><th class="king">Class</th><th class="king">id</th>
+    <tr>
+        <td>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        </td>
+        <td>A CSS class selector is used to select and apply a set of styling rules to one or more HTML elements</td>
+        <td>A CSS Id selector is a targeting mechanism used to apply specific styles to a single unique element within an html document</td>
+
+
+    </tr>
+
+    <th>Child</th><th>Descendant</th><th>Sibling</th>
+    <tr>
+        <td class="comicsans">Grabs html elements matched by the second selector. They must be the intimate children of the elements matched by the first selector</td>
+        <td id="ID">The CSS descendant selector is used to match and style elements that are nested anywhere within another specified element in the HTML document tree</td>
+        <td id="ID">In CSS sibling selectors are required for creating your web layouts. They are used to style elements based on the position of relative elements.
+            There are two types of sibling selectors, those being Adjacent, and  General.
+        </td>
+    </tr>
+
+
+
+</table>
+
+
+
+
+
+
+</body>
