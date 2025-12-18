@@ -4,13 +4,15 @@
     <title>Freewrite</title>
 </Head>
 <body>
-<table>
-    <tr>
-        <th></th>
-        <th>9am</th>
-    </tr>
+x = 10
+y = "hello"
+z = [1, 2, 3]
 
+print(f"ID of x: {id(x)}")
+print(f"ID of y: {id(y)}")
+print(f"ID of z: {id(z)}")
 
-</table>
+a = x
+print(f"ID of a: {id(a)}") # Will be the same as id(x) because 'a' refers to the same object
 </body>
 </html>
