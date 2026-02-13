@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/grid_demo.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .container {
+    margin:10px;
+    height: 90vh;
+        display: grid;
+    }
+
+    .box {
+    width: 20vw;
+    height: 30vh;
+    background-color: #3498db;
+    margin:30px;
+
+    }
+
+
+
+    #order{
+        height: 20vh;
+        margin: 5px;
+        background-color: red;
+        grid-column:1/3;
+    }
+    </style>
+</head>
+<body>
+<section class="container">
+    <div id="order">Box 5</div>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+</section>
+</body>
+</html>
